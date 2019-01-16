@@ -1,0 +1,15 @@
+version: '2.4'
+services:
+  openresty:
+    build:
+      context: ./
+      dockerfile: Dockerfile-openresty
+    restart: always
+    ports:
+      - 48080:8080
+      - 48088:8088
+      - 48089:8089
+      - 48081:8081
+    container_name: openresty
+    environment:
+      - TZ=Asia/Shanghai
