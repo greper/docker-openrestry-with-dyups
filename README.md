@@ -7,7 +7,7 @@
 
 
 +  _**step2**_ 构建镜像 
-    >cd build  
+    >cd docker  
     docker-compose build  
     docker-compose up -d
 
